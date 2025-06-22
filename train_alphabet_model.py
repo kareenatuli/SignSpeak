@@ -26,17 +26,6 @@ num_classes = len(le.classes_)
 X_train, X_test, y_train, y_test = train_test_split(X, y_encoded, test_size=0.2, stratify=y_encoded)
 
 # Build CNN model
-'''
-model = tf.keras.models.Sequential([
-    tf.keras.layers.Input(shape=(2, 21, 2)),
-    tf.keras.layers.Conv2D(32, (1, 3), activation='relu'),
-    tf.keras.layers.MaxPooling2D((1, 2)),
-    tf.keras.layers.Conv2D(64, (1, 3), activation='relu'),
-    tf.keras.layers.Flatten(),
-    tf.keras.layers.Dense(128, activation='relu'),
-    tf.keras.layers.Dense(num_classes, activation='softmax')
-])
-'''
 model = tf.keras.models.Sequential([
     tf.keras.layers.Input(shape=(2, 21, 2)),
 
