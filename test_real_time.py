@@ -14,7 +14,7 @@ inference_times = []
 
 # Load model and label encoder
 #model = tf.keras.models.load_model('isl_landmark_cnn.h5')
-model = tf.keras.models.load_model('isl_landmark_cnn_grok.keras')
+model = tf.keras.models.load_model('isl_landmark_cnn.keras')
 
 with open('label_encoder.pickle', 'rb') as f:
     le = pickle.load(f)
