@@ -18,4 +18,3 @@ This project allows users to sign the alphabets in real-time and converts these 
 4. Run the file preprocess_alphabet.py. This will create a .pickle file that stores all landmarks of gestures.
 5. Now run train_alphabet_model.py. This will train your model and store it (here it is stored as a .keras file). You can update this code to change the model. Model used here is CNN, this may be updated to train a different model.
 6. Finally, run the test_real_time.py file, this will turn on your webcam and translate your gestures in real time.
-7. A demo video of the working project has been uploaded to see how the project functions.
